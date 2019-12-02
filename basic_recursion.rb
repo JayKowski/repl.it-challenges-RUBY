@@ -1,11 +1,8 @@
 def sum(number)
   # Your code here
-  adder = 0
-  while number > 0
-    adder += number
-    number -= 1
-  end
-  adder
+  return 1 if number <= 1
+
+  number + sum(number-1)
 end
 
 puts sum(4)
